@@ -65,20 +65,20 @@ def perform_experiment(arr, repetitions):
 if __name__ == "__main__":
     #random integers experiment
     times_1, times_2, times_3, times_4 = [], [], [], []
-    # for pow in range(7, 16):
-    #     array = generate_randint_array(pow)
-    #     result = perform_experiment(array, 5)
-    #     times_1.append([pow, result])
+    for pow in range(7, 16):
+        array = generate_randint_array(pow)
+        result = perform_experiment(array, 5)
+        times_1.append([pow, result])
 
-    # print(times_1, end="\n")
+    print(times_1, end="\n")
 
     #ascending order experiment
-    # for pow in range(7, 16):
-    #     array = generate_ascending_array(pow)
-    #     result = perform_experiment(array, 1)
-    #     times_2.append([pow, result])
+    for pow in range(7, 16):
+        array = generate_ascending_array(pow)
+        result = perform_experiment(array, 1)
+        times_2.append([pow, result])
     
-    # print(times_2, end="\n")
+    print(times_2, end="\n")
 
     #descending order experiment
     for pow in range(7, 12):
@@ -89,10 +89,10 @@ if __name__ == "__main__":
     print(times_3, end="\n")
 
     #1,2,3-only experiment
-    # for pow in range(7, 12):
-    #     array = generate_triples(pow)
-    #     random.shuffle(array)
-    #     result = perform_experiment(array, 3)
-    #     times_4.append([pow, result])
+    for pow in range(7, 12):
+        array = generate_triples(pow)
+        random.shuffle(array)
+        result = perform_experiment(array, 3)
+        times_4.append([pow, result])
             
-    # print(times_4)
+    print(times_4)
