@@ -81,7 +81,7 @@ if __name__ == "__main__":
     print(times_2, end="\n")
 
     #descending order experiment
-    for pow in range(7, 12):
+    for pow in range(7, 16):
         array = generate_descending_array(pow)
         result = perform_experiment(array, 1)
         times_3.append([pow, result])
@@ -89,7 +89,7 @@ if __name__ == "__main__":
     print(times_3, end="\n")
 
     #1,2,3-only experiment
-    for pow in range(7, 12):
+    for pow in range(7, 16):
         array = generate_triples(pow)
         random.shuffle(array)
         result = perform_experiment(array, 3)
